@@ -50,6 +50,12 @@ flutter:
     - images/logo.png
     - images/logo1.png
     - images/logo_2.png
+    - images/cat_group.jpeg
+    - images/cat_kids.jpg
+    - images/cat_man.jpeg
+    - images/cat_man_1.jpeg
+    - images/cat_woman.jpeg
+    - images/cat_woman_1.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Fashionism',
       theme: new ThemeData(
         primarySwatch: Colors.pink,
+        fontFamily: 'Josefin',
       ),
       home: new LoginPage(),
       routes: pages,
