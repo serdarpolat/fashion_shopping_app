@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  static String tag = 'ana-sayfa';
+class WomanPage extends StatelessWidget {
+  static String tag = 'woman';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,283 +121,357 @@ class HomePage extends StatelessWidget {
             bottom: BorderSide(width: 1.0, color: Colors.black12),
           ),
         ),
-        child: ListView(
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(20.0),
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Card(
-                  elevation: 1.0,
+        child: Container(
+          child: ListView(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset(
-                        './images/woman_4.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
+                      Text(
+                        'New Arrivals',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(WomanPage.tag);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 2.5),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Best Price',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                height: 180.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6.0),
+                                  boxShadow: <BoxShadow>[
+                                    BoxShadow(
+                                      color: Colors.black54,
+                                      offset: Offset(1.0, 2.0),
+                                      blurRadius: 2.0,
+                                    ),
+                                  ],
+                                  image: DecorationImage(
+                                    image: AssetImage('./images/woman_na.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-                Card(
-                  elevation: 1.0,
+              ),
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset(
-                        './images/woman_5.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
+                      Text(
+                        'Clothes',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(WomanPage.tag);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 2.5),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 140.0),
+                                    child: Text(
+                                      'Choice Your Style',
+                                      textAlign: TextAlign.end,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 24.0,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 180.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6.0),
+                                  boxShadow: <BoxShadow>[
+                                    BoxShadow(
+                                      color: Colors.black54,
+                                      offset: Offset(1.0, 2.0),
+                                      blurRadius: 2.0,
+                                    ),
+                                  ],
+                                  image: DecorationImage(
+                                    image: AssetImage('./images/woman_clothes.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Card(
-                  elevation: 1.0,
+              ),
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset(
-                        './images/woman_4.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
+                      Text(
+                        'Shoes & Accessories',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(WomanPage.tag);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 2.5),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Shine',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                height: 180.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6.0),
+                                  boxShadow: <BoxShadow>[
+                                    BoxShadow(
+                                      color: Colors.black54,
+                                      offset: Offset(1.0, 2.0),
+                                      blurRadius: 2.0,
+                                    ),
+                                  ],
+                                  image: DecorationImage(
+                                    image: AssetImage('./images/woman_sa.jpg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-                Card(
-                  elevation: 1.0,
+              ),
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset(
-                        './images/woman_5.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
+                      Text(
+                        'New Arrivals',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(WomanPage.tag);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 2.5),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Best Price',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                height: 180.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6.0),
+                                  boxShadow: <BoxShadow>[
+                                    BoxShadow(
+                                      color: Colors.black54,
+                                      offset: Offset(1.0, 2.0),
+                                      blurRadius: 2.0,
+                                    ),
+                                  ],
+                                  image: DecorationImage(
+                                    colorFilter: ColorFilter.mode(
+                                        Colors.pink.shade200, BlendMode.multiply),
+                                    image: AssetImage('./images/cat_woman.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Card(
-                  elevation: 1.0,
+              ),
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset(
-                        './images/woman_4.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
+                      Text(
+                        'New Arrivals',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(WomanPage.tag);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 2.5),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Best Price',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                height: 180.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6.0),
+                                  boxShadow: <BoxShadow>[
+                                    BoxShadow(
+                                      color: Colors.black54,
+                                      offset: Offset(1.0, 2.0),
+                                      blurRadius: 2.0,
+                                    ),
+                                  ],
+                                  image: DecorationImage(
+                                    colorFilter: ColorFilter.mode(
+                                        Colors.pink.shade200, BlendMode.multiply),
+                                    image: AssetImage('./images/cat_woman.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-                Card(
-                  elevation: 1.0,
+              ),
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Container(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset(
-                        './images/woman_5.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
+                      Text(
+                        'New Arrivals',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30.0,
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(WomanPage.tag);
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 2.5),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Best Price',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                height: 180.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(6.0),
+                                  boxShadow: <BoxShadow>[
+                                    BoxShadow(
+                                      color: Colors.black54,
+                                      offset: Offset(1.0, 2.0),
+                                      blurRadius: 2.0,
+                                    ),
+                                  ],
+                                  image: DecorationImage(
+                                    colorFilter: ColorFilter.mode(
+                                        Colors.pink.shade200, BlendMode.multiply),
+                                    image: AssetImage('./images/cat_woman.jpeg'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Card(
-                  elevation: 1.0,
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset(
-                        './images/woman_4.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Card(
-                  elevation: 1.0,
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset(
-                        './images/woman_5.png',
-                        width: (MediaQuery.of(context).size.width / 2) -
-                            40.0,
-                        height: 220.0,
-                        fit: BoxFit.cover,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: <Widget>[
-                            Text(
-                              '320TL',
-                            ),
-                            Text(
-                              '460TL',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.lineThrough,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
+              ),
+            ],
+          ),
         ),
       ),
     );

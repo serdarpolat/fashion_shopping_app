@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './woman.dart';
 
 class HomePage extends StatefulWidget {
   static String tag = 'ana-sayfa';
@@ -73,7 +74,7 @@ class MainContent extends StatelessWidget {
                     Expanded(
                       child: InkWell(
                         onTap: () {
-                          print('Go To Women Category');
+                          Navigator.of(context).pushNamed(WomanPage.tag);
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 2.5),
@@ -491,6 +492,165 @@ class MainContent extends StatelessWidget {
                         padding: const EdgeInsets.all(12.0),
                         child: Text(
                           'Big Discount - 2 Days Left',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'TOMMY HILFIGER',
+                      style: TextStyle(
+                        color: Color(0xFFCC071E),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                    Text(
+                      ' - New Arrivals',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  elevation: 1.0,
+                  child: Column(
+                    children: <Widget>[
+                      Image.asset(
+                        './images/th.jpg',
+                        width: MediaQuery.of(context).size.width,
+                        height: 160.0,
+                        fit: BoxFit.fitWidth,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(
+                          'Big Discount - 3 Days Left',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'VERSACE',
+                      style: TextStyle(
+                        color: Color(0xFFE3CF57),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                    Text(
+                      ' - New Arrivals',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  elevation: 1.0,
+                  child: Column(
+                    children: <Widget>[
+                      Image.asset(
+                        './images/versace.jpg',
+                        width: MediaQuery.of(context).size.width,
+                        height: 160.0,
+                        fit: BoxFit.fitWidth,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(
+                          'Big Discount With Gifts',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'RALPH LAUREN',
+                      style: TextStyle(
+                        color: Color(0xFF002A53),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                    Text(
+                      ' - New Arrivals',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  elevation: 1.0,
+                  child: Column(
+                    children: <Widget>[
+                      Image.asset(
+                        './images/rl.jpg',
+                        width: MediaQuery.of(context).size.width,
+                        height: 160.0,
+                        fit: BoxFit.fitWidth,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(
+                          'New Season, New Design',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 18.0,

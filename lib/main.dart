@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:fashion/giris_sayfasi.dart';
 import 'package:fashion/anasayfa.dart';
+import 'package:fashion/woman.dart';
 
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   final pages = <String, WidgetBuilder> {
     LoginPage.tag: (context) => LoginPage(),
-    HomePage.tag: (context) => HomePage()
+    HomePage.tag: (context) => HomePage(),
+    WomanPage.tag: (context) => WomanPage()
   };
 
   @override
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         fontFamily: 'Josefin',
       ),
-      home: new HomePage(),
+      home: new LoginPage(),
       routes: pages,
     );
   }
