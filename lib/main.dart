@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         fontFamily: 'Josefin',
       ),
-      home: new LoginPage(),
+      home: new HomePage(),
       routes: pages,
     );
   }

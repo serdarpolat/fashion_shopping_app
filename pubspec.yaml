@@ -59,6 +59,9 @@ flutter:
     - images/others.jpeg
     - images/jewelry.jpeg
     - images/watch.jpg
+    - images/hmgoepprod_1.jpg
+    - images/hmgoepprod.jpg
+    - images/hmamurhm.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

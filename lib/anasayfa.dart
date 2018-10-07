@@ -187,7 +187,6 @@ class MainContent extends StatelessWidget {
             ),
           ),
         ),
-
         Padding(
           padding: EdgeInsets.all(20.0),
           child: Container(
@@ -306,7 +305,8 @@ class MainContent extends StatelessWidget {
                             ],
                             image: DecorationImage(
                               colorFilter: ColorFilter.mode(
-                                  Colors.amberAccent.shade400, BlendMode.multiply),
+                                  Colors.amberAccent.shade400,
+                                  BlendMode.multiply),
                               image: AssetImage('./images/cat_group.jpeg'),
                               fit: BoxFit.cover,
                             ),
@@ -320,7 +320,6 @@ class MainContent extends StatelessWidget {
             ),
           ),
         ),
-
         Padding(
           padding: EdgeInsets.all(20.0),
           child: Container(
@@ -448,6 +447,59 @@ class MainContent extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+              ],
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'H&M',
+                      style: TextStyle(
+                        color: Color(0xFFCC071E),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                    Text(
+                      ' - New Arrivals',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                  ],
+                ),
+                Card(
+                  elevation: 1.0,
+                  child: Column(
+                    children: <Widget>[
+                      Image.asset(
+                        './images/hmgoepprod_1.jpg',
+                        width: MediaQuery.of(context).size.width,
+                        height: 160.0,
+                        fit: BoxFit.fitWidth,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(
+                          'Big Discount - 2 Days Left',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
